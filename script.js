@@ -62,11 +62,12 @@ function getParks(states, numResults) {
       if (response.ok) {
         return response.json();
       }
+      console.log("throwing error");
       throw new Error(response.statusText);
     })
     .then(responseJson => displayResults(responseJson))
     .catch(err => {
-      $('#js-error-message').text(`Something went wrong: ${err.message}`);
+      $('.js-error-message').text(`Something went wrong: ${err.message}`);
     });
 }
 
@@ -82,6 +83,5 @@ function watchForm() {
 }
 
 $(function() {
-    // console.log("We're live! Waiting for input.");
     watchForm();
 })
