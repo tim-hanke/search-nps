@@ -8,8 +8,10 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
+    <header class="container">
         <h1>Search for National Parks by state</h1>
+    </header>
+    <main class="container">
         <form>
             <label for="state">Pick one or more states to search for parks. Please Control-click (Windows) or Command-click (Mac) to select multiple states.</label><br>
             <select name="state" id="state" multiple size="10">
@@ -74,11 +76,10 @@
         <section class="js-error-message"></section>
         <section class="js-results hidden">
             <h2>Results</h2>
-            <ul class="js-results-list">
-            </ul>
+            <ul class="js-results-list"></ul>
         </section>
 
-    </div>
+    </main>
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="script.js"></script>

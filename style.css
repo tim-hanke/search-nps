@@ -11,6 +11,14 @@ body {
     margin: 0 auto;
 }
 
+form > * {
+    margin: 5px 0;
+}
+
+.resultsImg {
+    width : 100%;
+}
+
 .hidden {
     display: none;
 }
