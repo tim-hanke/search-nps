@@ -52,11 +52,11 @@ function getParks(states, numResults) {
         limit: numResults,
         api_key: apiKey,
     }
-    console.log(params);
+    // console.log(params);
     const queryString = formatQueryParams(params);
-    console.log(queryString);
+    // console.log(queryString);
     const url = searchURL + '?' + queryString;
-    console.log(url);
+    // console.log(url);
     fetch(url)
     .then(response => {
       if (response.ok) {
@@ -75,8 +75,8 @@ function watchForm() {
         e.preventDefault();
         const states = $('#state').val().join();
         const numResults = $('#numResults').val();
-        console.log(states);
-        console.log(numResults);
+        // console.log(states);
+        // console.log(numResults);
         getParks(states, numResults);
     });
 }
